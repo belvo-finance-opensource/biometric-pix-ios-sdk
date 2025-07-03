@@ -17,9 +17,5 @@ let package = Package(
             name: "BiometricPixSDK",
             path: "BiometricPixSDK.xcframework"
         ),
-        .target(
-            name: "BiometricPixSDKResources",
-            resources: [.process("Resources/PrivacyInfo.xcprivacy")]
-        )
     ]
 )
