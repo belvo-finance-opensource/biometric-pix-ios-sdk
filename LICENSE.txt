@@ -1,0 +1,39 @@
+Copyright (c) 2025 Belvo
+
+Permission is hereby granted, free of charge, to Belvo partners and clients 
+who have executed a valid service agreement with Belvo ("Authorized Users"), 
+to use this software and associated documentation files (the "Software") 
+solely for integration with Belvo services, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
+
+RESTRICTIONS:
+
+You may NOT modify, merge, alter, or create derivative works of the Software
+
+You may NOT reverse engineer, decompile, or disassemble the Software
+
+You may NOT remove or modify any copyright notices or proprietary legends
+
+Use is limited to integration with Belvo services only
+
+DATA COLLECTION: Through this Software, Belvo will collect and receive certain device 
+and system information including device identifiers, system properties, device settings, 
+location data, and security signals for fraud prevention and service optimization purposes. 
+You acknowledge that Belvo obtains this data and you are solely responsible for disclosing 
+this data collection to your end users, obtaining all necessary consents, and ensuring 
+compliance with all applicable privacy and data protection laws.
+
+Belvo may update the Software from time to time but is not obligated to provide updates, 
+maintenance, or support of any kind unless specified in a separate agreement.
+
+Belvo reserves the right to terminate this license if you violate any of these terms. 
+Upon termination, you must destroy all copies of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION 
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE 
+OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

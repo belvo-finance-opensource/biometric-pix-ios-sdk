@@ -1,21 +1,25 @@
-// swift-tools-version: 6.1
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version:5.7
 
 import PackageDescription
 
 let package = Package(
-    name: "biometric-pix-ios-sdk",
+    name: "BiometricPixSDK",
+    platforms: [
+        .iOS(.v15)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "biometric-pix-ios-sdk",
-            targets: ["biometric-pix-ios-sdk"]),
+            name: "BiometricPixSDK",
+            targets: ["BiometricPixSDK"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
+        .binaryTarget(
+            name: "BiometricPixSDK",
+            path: "BiometricPixSDK.xcframework"
+        ),
         .target(
-            name: "biometric-pix-ios-sdk"),
-
+            name: "BiometricPixSDKResources",
+            resources: [.process("Resources/PrivacyInfo.xcprivacy")]
+        )
     ]
 )
