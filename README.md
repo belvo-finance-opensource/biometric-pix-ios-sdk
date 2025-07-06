@@ -14,7 +14,7 @@ Add it directly through Xcode:
 
 ## Requirements
 
-- iOS 13.0+
+- iOS 15.0+
 
 ## Privacy
 
@@ -22,6 +22,6 @@ This SDK includes a privacy manifest (PrivacyInfo.xcprivacy) that declares the t
 
 ## License
 
-This package is available under a custom license. See the [LICENSE.txt](LICENSE.txt) file for more information.
+This package is available under a custom license. See the [LICENSE](LICENSE.txt) file for more information.
 
 Copyright (c) 2025 Belvo 
