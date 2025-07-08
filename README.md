@@ -8,7 +8,7 @@ A Swift package for the Biometric Pix SDK.
 
 Add it directly through Xcode:
 
-1. Go to File > Swift Packages > Add Package Dependency
+1. Go to File > Add Package Dependency
 2. Enter the repository URL: `https://github.com/belvo-finance-opensource/biometric-pix-ios-sdk.git`
 3. Follow the prompts to complete the installation
 
