@@ -150,7 +150,7 @@ __attribute__((swift_name("BiometricPixSDK")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)cleanup __attribute__((swift_name("cleanup()")));
-- (BPSDKRiskSignals *)collectRiskSignalsCustomerCreatedAt:(NSString *)customerCreatedAt __attribute__((swift_name("collectRiskSignals(customerCreatedAt:)")));
+- (BPSDKRiskSignals *)collectRiskSignalsAccountTenure:(NSString *)accountTenure __attribute__((swift_name("collectRiskSignals(accountTenure:)")));
 - (void)requestPermissionOnResult:(void (^)(BPSDKBoolean *))onResult __attribute__((swift_name("requestPermission(onResult:)")));
 - (void)startRegistrationFidoResponseString:(NSString *)fidoResponseString callback:(id<BPSDKFidoRegistrationCallback>)callback __attribute__((swift_name("startRegistration(fidoResponseString:callback:)")));
 - (void)startSigningFidoResponseString:(NSString *)fidoResponseString fallbackCredential:(NSString * _Nullable)fallbackCredential callback:(id<BPSDKFidoAuthenticationCallback>)callback __attribute__((swift_name("startSigning(fidoResponseString:fallbackCredential:callback:)")));
