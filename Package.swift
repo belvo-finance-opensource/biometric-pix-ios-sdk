@@ -10,20 +10,20 @@ let package = Package(
     products: [
         .library(
             name: "BiometricPixSDK",
-            targets: ["BiometricPixSDKWrapper", "BiometricPixSDK"]),
+            targets: ["BiometricPixSDKWrapper"]),
     ],
     dependencies: [
         .package(url: "https://github.com/DataDog/dd-sdk-ios.git", from: "2.0.0")
     ],
     targets: [
         .binaryTarget(
-            name: "BiometricPixSDK",
+            name: "BiometricPixSDKBinary",
             path: "BiometricPixSDK.xcframework"
         ),
         .target(
             name: "BiometricPixSDKWrapper",
             dependencies: [
-                "BiometricPixSDK",
+                "BiometricPixSDKBinary",
                 .product(name: "DatadogObjc", package: "dd-sdk-ios"),
                 .product(name: "DatadogRUM", package: "dd-sdk-ios"),
                 .product(name: "DatadogCore", package: "dd-sdk-ios"),
