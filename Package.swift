@@ -5,12 +5,12 @@ import PackageDescription
 let package = Package(
     name: "BiometricPixSDK",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v15),
     ],
     products: [
         .library(
             name: "BiometricPixSDK",
-            targets: ["BiometricPixSDKWrapper"]),
+            targets: ["BiometricPixSDKWrapper", "BiometricPixSDK"]),
     ],
     dependencies: [
         .package(url: "https://github.com/DataDog/dd-sdk-ios.git", from: "2.0.0")
