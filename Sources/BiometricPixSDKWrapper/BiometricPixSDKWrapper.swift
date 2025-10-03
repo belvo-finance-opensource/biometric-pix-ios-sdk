@@ -1,12 +1,12 @@
 // BiometricPixSDK.swift
 // This wrapper ensures Datadog is available as a transitive dependency
 
-import BiometricPixSDKBinary
+import BiometricPixSDK
 import DatadogObjc
 import DatadogCrashReporting
 
 // Re-export all public APIs from the binary framework
-@_exported import BiometricPixSDKBinary
+@_exported import BiometricPixSDK
 
 // This wrapper target ensures that:
 // 1. Your binary framework is available
