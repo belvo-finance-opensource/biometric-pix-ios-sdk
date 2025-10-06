@@ -25,9 +25,6 @@ let package = Package(
             dependencies: [
                 "BiometricPixSDKBinary",
                 .product(name: "DatadogObjc", package: "dd-sdk-ios"),
-                .product(name: "DatadogRUM", package: "dd-sdk-ios"),
-                .product(name: "DatadogCore", package: "dd-sdk-ios"),
-                .product(name: "DatadogLogs", package: "dd-sdk-ios"),
                 .product(name: "DatadogCrashReporting", package: "dd-sdk-ios")
             ]
         ),
