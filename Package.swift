@@ -5,17 +5,28 @@ import PackageDescription
 let package = Package(
     name: "BiometricPixSDK",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v15),
     ],
     products: [
         .library(
             name: "BiometricPixSDK",
-            targets: ["BiometricPixSDK"]),
+            targets: ["BiometricPixSDKWrapper"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/DataDog/dd-sdk-ios.git", from: "2.30.0")
     ],
     targets: [
         .binaryTarget(
-            name: "BiometricPixSDK",
+            name: "BiometricPixSDKBinary",
             path: "BiometricPixSDK.xcframework"
+        ),
+        .target(
+            name: "BiometricPixSDKWrapper",
+            dependencies: [
+                "BiometricPixSDKBinary",
+                .product(name: "DatadogObjc", package: "dd-sdk-ios"),
+                .product(name: "DatadogCrashReporting", package: "dd-sdk-ios")
+            ]
         ),
     ]
 )
