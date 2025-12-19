@@ -1,0 +1,5 @@
+framework module "BiometricPixModels" {
+    umbrella header "BiometricPixModels.h"
+    export *
+    module * { export * }
+}
