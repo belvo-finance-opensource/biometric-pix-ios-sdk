@@ -1,5 +1,4 @@
 import BiometricPixSDK
-import BiometricPixModels
 import DatadogObjc
 import DatadogCrashReporting
 
